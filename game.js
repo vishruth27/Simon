@@ -89,11 +89,11 @@ function animatePress(currentColor) {
 
 function gameOver() {
 
-    // document.querySelector("#level-title").innerText = "GAME OVER\nPress any key to restart.";
+    document.querySelector("#level-title").innerText = "GAME OVER\nPress any key to restart.";
     document.body.style.backgroundImage = url('https://media.giphy.com/media/14f8lItZImSCqI/source.gif');
-    setTimeout(function () {
-        document.querySelector("body").classList.toggle("game-over")
-    }, 200)
+//     setTimeout(function () {
+//         document.querySelector("body").classList.toggle("game-over")
+//     }, 200)
 
     level = 0;
     gamePattern = [];
