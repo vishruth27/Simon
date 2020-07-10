@@ -19,7 +19,7 @@ function nextSequence() {
     playSound('button');
 };
 
-document.addEventListener("load", trip, {once: true});
+document.addEventListener("click", trip, {once: true});
 
 function trip () {
 
