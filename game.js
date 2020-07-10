@@ -19,7 +19,7 @@ function nextSequence() {
     playSound('button');
 };
 
-document.addEventListener("click", trip, {once: true});
+document.addEventListener("load", trip, {once: true});
 
 function trip () {
 
@@ -81,7 +81,6 @@ function playSound(audioName) {
 function animatePress(currentColor) {
 
     $("." + currentColor).addClass("animate")
-
     setTimeout(function () {
         $("." + currentColor).removeClass("animate");
     }, 1000)
@@ -90,7 +89,7 @@ function animatePress(currentColor) {
 function gameOver() {
 
     document.querySelector("#level-title").innerText = "GAME OVER\nPress any key to restart.";
-    document.body.style.backgroundImage = url('https://media.giphy.com/media/14f8lItZImSCqI/source.gif');
+//     document.body.style.backgroundImage = url('https://media.giphy.com/media/14f8lItZImSCqI/source.gif');
 //     setTimeout(function () {
 //         document.querySelector("body").classList.toggle("game-over")
 //     }, 200)
@@ -98,5 +97,5 @@ function gameOver() {
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
-    started = false
+    started = false;
 }
